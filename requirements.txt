@@ -2,4 +2,5 @@ python-dotenv
 flask
 flask-wtf
 flask-admin
+flask-security
 peewee
