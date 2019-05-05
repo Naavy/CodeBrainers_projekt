@@ -1,12 +1,10 @@
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
-# from flask_migrate import Migrate
+from playhouse.flask_utils import FlaskDB
 from .config import Config
 
 app = Flask(__name__)
 app.config.from_object(Config)
 
-db = SQLAlchemy(app)
-# migrate = Migrate(db, app)
+db_wrapper = FlaskDB(app)
 
 from . import views, models

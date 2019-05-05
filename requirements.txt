@@ -1,6 +1,5 @@
+python-dotenv
 flask
 flask-wtf
-python-dotenv
-sqlalchemy
-flask-sqlalchemy
-flask-migrate
+flask-admin
+peewee

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p>List of users in this application:</p>
+{% if user_list %}
+<ul>
+{% for user in user_list %}
+    <li>{{ user }}</li>
+{% endfor %}
+</ul>
+{% else %}
+<p>No users!</p>
+{% endif %}
+{% endblock %}
